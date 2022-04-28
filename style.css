@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 50%;
+    margin: 4rem auto;
+}
+.input {
+    width: 300px;
+    height: 45px;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+input {
+    height: 45px;
+    padding: 0 1rem;
+}
+.success {
+    color: green;
+}
+.error {
+    color: red;
+}
+ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+li {
+    margin: .1rem 0;
+    font-size: 30px;
+    background: #eaeaea;
+    padding: .5rem 1rem;
+    border: 1px solid #000000;
+    position: relative;
+}
+.linethrough::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 2px;
+    background: #ff0000;
+    content: "";
+    width: 100%;
+    display: block;
+}
